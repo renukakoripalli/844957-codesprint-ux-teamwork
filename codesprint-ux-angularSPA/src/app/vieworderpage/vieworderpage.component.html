@@ -1,0 +1,19 @@
+
+<table class="table table-border">
+    <tr>
+        <th>Sno</th>
+        <th>Amount</th>
+        <th>Buyer Name</th>
+        <th>Shipping Address</th>
+        <th>City</th>
+        <th>Phone</th>
+    </tr>
+    <tr *ngFor="let item of list">
+    <td>{{item.sno}}</td>
+    <td>{{item.amount | currency:'INR':true }}</td>
+    <td>{{item.buyerName}}</td>
+    <td>{{item.streetAddress}}</td>
+    <td>{{item.city}}</td>
+    <td>{{item.mobile}}</td>
+    </tr>
+</table>

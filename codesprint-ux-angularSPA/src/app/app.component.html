@@ -1,0 +1,55 @@
+<div class="bg">
+<div>
+  
+      <img src="assets\images\Logo.png" class="rounded-circle" alt="Not" style="width: 100px; height: 100px;">
+  
+  <p style="text-align:center">When you get a gift card, you tend to think of it as free money, and you splurge a little bit.</p>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light  bg-danger">
+
+  <div class="col" id="navbarText">
+      <ul class="nav row nav-pills ">
+
+          <li class="col-3 nav-item text-center">
+              <a class="nav-link btn-outline-warning" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home </a>
+          </li>
+          <li class="col-3 nav-item text-center">
+              <a class="nav-link btn-outline-warning" [routerLink]="['/placegiftcard']"  ><span class="glyphicon glyphicon-shopping-cart"></span>Place gift card Orders</a>
+          </li>
+          <li class="col-3 nav-item text-center">
+              <a class="nav-link btn-outline-warning" [routerLink]="['/vieworderpage']"  ><span class="glyphicon glyphicon-sunglasses"></span>View Gift Card Orders</a>
+          </li>
+          <li class="col-2 nav-item text-center">
+              <a class="nav-link btn-outline-warning" [routerLink]="['/contact']"  ><span class="glyphicon glyphicon-earphone"></span>Contact</a>
+          </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row">
+        <aside class="col-3">
+
+            <ul class="nav flex-column">
+                <li class="nav-item my-2 text-center">
+                    <a [routerLink]="['/home']"   class="nav-link btn-warning">Home</a>
+                </li>
+                <li class="nav-item my-2 text-center">
+                    <a [routerLink]="['/placegiftcard']"   class="nav-link btn-warning">Place Gift Card Orders</a>
+                </li>
+                <li class="nav-item my-2 text-center">
+                    <a [routerLink]="['/vieworderpage']"   class="nav-link btn-warning">View Gift Card Orders</a>
+                </li>
+                <li class="nav-item my-2 text-center">
+                    <a [routerLink]="['/contact']"  class="nav-link btn-warning">Contact</a>
+                </li>
+            </ul>
+
+        </aside>
+        <div class="col-9">
+        <router-outlet></router-outlet>
+        </div>
+</div>
+      </section>
+      </div>

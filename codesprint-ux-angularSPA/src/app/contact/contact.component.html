@@ -1,0 +1,54 @@
+
+
+<div class="card m-3">
+    <h5 class="card-header text-center">Fill out the form below and we’ll be in touch soon. </h5>
+    <div class="card-body bg-secondary">
+        <form [formGroup]="Contactform" (ngSubmit)="onSubmit()">
+          <div class="offset-4">
+            
+                <div class="form-group col-6 text-center">
+                    <label>UserName</label>
+                    <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                        <div *ngIf="f.name.errors.required"> Name is required</div>
+                        <div *ngIf="f.name.errors.pattern">Enter only Alphabets</div>
+                    </div>
+                </div>
+
+                <div class="form-group col-6 text-center">
+                    <label>PhoneNumber</label>
+                    <input type="number" formControlName="mobile" maxlength="10" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.mobile.errors }" />
+                    <div *ngIf="submitted && f.mobile.errors" class="invalid-feedback">
+                        <div *ngIf="f.mobile.errors.required">Mobile no is required</div>
+                        <div *ngIf="f.mobile.errors.pattern">Mobile no Must be Valid</div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group col-6 text-center">
+                    <label >Email</label>
+                    <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                    </div>
+                </div>
+
+                <div class="form-group col-6 text-center">
+                    <label>Comments</label>
+                    <textarea rows="7" cols="40" style="width:350px;" formControlName="comment" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.comment.errors }"></textarea>
+                    <div *ngIf="submitted && f.comment.errors" class="invalid-feedback">
+                        <div *ngIf="f.comment.errors.required"> comment is required</div>
+                        <div *ngIf="f.comment.errors.pattern">please write your comment</div>
+                    </div>
+                </div>
+            </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" >Register</button>
+                    <button class="btn btn-danger" type="reset" (click)="onReset()">Reset</button>
+                </div>
+                
+        </form>
+    </div>
+</div>

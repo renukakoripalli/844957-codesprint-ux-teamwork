@@ -1,0 +1,71 @@
+{
+  "giftcard": [
+    {
+      "id": 1
+    },
+    {
+      "sno": "S905",
+      "amount": 222,
+      "paisa": 33,
+      "streetAddress": "akjdsnck",
+      "city": "akjsdnck",
+      "buyerName": "jaksck",
+      "buyerLastName": "kajsnck",
+      "mobile": "8888888888",
+      "id": 2
+    },
+    {
+      "sno": "S537",
+      "amount": 2000,
+      "paisa": 12,
+      "streetAddress": "9-116sriram",
+      "city": "eluru",
+      "buyerName": "varma",
+      "buyerLastName": "venkat",
+      "mobile": "9876045321",
+      "id": 3
+    },
+    {
+      "sno": "S209",
+      "amount": 2341,
+      "paisa": 22,
+      "streetAddress": "saewredf",
+      "city": "eluru",
+      "buyerName": "sarath",
+      "buyerLastName": "venuol",
+      "mobile": "9807654321",
+      "id": 4
+    },
+    {
+      "sno": "S432",
+      "amount": 1222,
+      "paisa": 12,
+      "streetAddress": "banglore",
+      "city": "electronic",
+      "buyerName": "karthik",
+      "buyerLastName": "asada",
+      "mobile": "9876543321",
+      "id": 5
+    },
+    {
+      "sno": "S50",
+      "amount": 1255,
+      "streetAddress": "rkpuram",
+      "city": "eluru",
+      "buyerName": "ganesh",
+      "buyerLastName": "gancher",
+      "mobile": "9807654352",
+      "id": 6
+    },
+    {
+      "sno": "S557",
+      "amount": 1245,
+      "streetAddress": "onetown",
+      "city": "vijayawada",
+      "buyerName": "varma",
+      "buyerLastName": "surname",
+      "mobile": "9878906543",
+      "id": 7
+    }
+  ]
+}
